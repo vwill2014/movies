@@ -1,0 +1,41 @@
+<h1>Films</h1>
+
+<h2>Films that I Really Want to Watch</h2>
+
+<ul>
+  {{#each films}}
+    {{#unless watched}}
+   
+      {{> films/cat-block watched=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Films I Have Already Watched</h2>
+
+<ul>
+  {{#each films}}
+    {{#if watched}}
+    <!-- I am not understanding the code below -->
+      {{> films/cat-block watched=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add A Movie</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <!-- I am not sure what this is doing below -->
+    <label for="fil">Movie Name:</label>
+    <input type="text" id="fil" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="watch">Watched?</label><br>
+    <input type="radio" name="watched" value="1" checked> Watched<br>
+    <input type="radio" name="watched" value="0"> Restore
+  </div>
+
+  <button type="submit">Add Movie</button>
+</form>
