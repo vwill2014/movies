@@ -18,11 +18,11 @@ router.get("/", function(req, res) {
 
 router.post("/api/films", function(req, res) {
   film.create([
-    "name", "sleepy"
+    "name", "watched"
   ], [
-    req.body.name, req.body.sleepy
+    req.body.name, req.body.watched
   ], function(result) {
-    // Send back the ID of the new quote
+    
     res.json({ id: result.insertId });
   });
 });
@@ -33,7 +33,7 @@ router.put("/api/films/:id", function(req, res) {
   console.log("condition", condition);
 
   film.update({
-    watched: req.body.sleepy
+    watched: req.body.watched
   }, condition, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404

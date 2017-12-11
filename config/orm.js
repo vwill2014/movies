@@ -1,5 +1,5 @@
 // Import MySQL connection.
-var connection = require("/connection.js");
+var connection = require("../config/connection.js");
 // checking to see if the ./ is needed.
 console.log("connection established");
 
