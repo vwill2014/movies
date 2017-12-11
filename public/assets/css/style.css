@@ -1,19 +1,16 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+body{
+background-color: black;
+color:white;
 }
 
-.label {
-  font-weight: bold;
+#pic{
+width:200px;
+height:200px;
+
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
+#back{
+position:absolute;
+margin-right:100px;
 
-.form-group {
-  margin-bottom: 5px;
 }
