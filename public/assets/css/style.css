@@ -2,15 +2,49 @@ body{
 background-color: black;
 color:white;
 }
+img{
+display:block;
+margin:auto;
+}
 
+.back{
+
+width:100%;
+
+}
+#back{
+
+}
 #pic{
-width:200px;
-height:200px;
+width:300px;
+height:300px;
+}
+
+#title{
+
+	font-family: 'Amatic SC', cursive;
+	font-size:100px;
+	text-align:center;
+
+}
+.title{
+
+font-family: 'Amatic SC', cursive;
+	font-size:50px;
+	text-align:center;
 
 }
 
-#back{
-position:absolute;
-margin-right:100px;
+.form-group{
+
+text-align:center;
+
+}
+
+button{
+
+display:block;
+margin:auto;
+color:black;
 
 }
