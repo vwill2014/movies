@@ -31,7 +31,7 @@ function objToSql(ob) {
       arr.push(key + "=" + value);
     }
   }
-
+}
 
 // orm information
 
