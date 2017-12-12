@@ -12,7 +12,7 @@ connection = mysql.creatConnection(process.env.JAWSDB_URL);
 
     host: 'localhost',
     user: 'root',
-    password: ''
+    password: '',
     database:'film_db'
   });
 };
